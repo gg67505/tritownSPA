@@ -1,0 +1,290 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+.bottomBorder{
+  left: 0%;
+  width: 100%;
+  height: 5%;
+}
+
+.divCruiseStatusCenter1{
+  position: absolute;
+  top: 85%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 300px;
+  height: 100px;
+}
+.divCruiseStatusCenter2{
+  position: absolute;
+  top: 88%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 300px;
+  height: 100px;
+}
+.divCruiseStatusCenter3{
+  position: absolute;
+  top: 91%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 300px;
+  height: 100px;
+}
+.divCruiseStatusCenter4{
+  position: absolute;
+  top: 94%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 300px;
+  height: 100px;
+}
+
+.messageBoard{
+  position: absolute;
+  top: 90%;
+  left:20%;
+  right:10%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.logoDivContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.logoDiv {
+  width: 300px;
+  height: 300px; 
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgMenu {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  margin-top: -15px;
+  margin-left: -10px;
+ }
+
+.bgHomeTitle {
+   align-content:center;
+ }
+
+.bgContent {
+    /* The image used */
+   /*background: url('http://localhost:4200/assets/images/tritownBackground.gif');*/
+   background: url('assets/images/tritownBackground.gif');
+    /* full height */
+    height: 100%;
+    position: middle; 
+    vertical-align: top;
+    border-top: 2px solid #47748b;
+    overflow-y:scroll;  
+  }
+
+  .bgPicsPage {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 80%;
+    height: 80%;
+  }
+
+
+
+
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+div.menuFixed {
+  position: fixed;
+  font-size: x-small;
+  border: 0px solid black;
+  background-color: whitesmoke;
+  width: 10%;
+}
+.headerText {
+  font-size: x-large;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.linkText {
+  font-size: large;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.menuButton {
+  border:1px solid black;
+  border-radius:7%;
+  font-size:1.000;
+  word-wrap: break-word;
+  width: 150px;
+  max-width: 100%;
+  background-color: black;
+ }
+
+ .nextprevButton {
+  border:3px solid white;
+  width: 150px;
+  font-size:1.000;
+  color: white;
+  background-color: black;
+ }
+
+ .prevPicButton {
+  position: absolute;
+  left: 10%;
+  border:3px solid white;
+  width: 20%;
+  font-size:1.000;
+  color: white;
+  background-color: black;
+ }
+ .nextPicButton {
+  position: absolute;
+  left: 70%;
+  border:3px solid white;
+  width: 20%;
+  font-size:1.000;
+  color: white;
+  background-color: black;
+ }
+
+
+
+
+ body {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* Bootstrap sidebar menu stying below to follow */
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+      margin-left: -250px;
+  }
+  #sidebar.active {
+      margin-left: 0;
+  }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cover-picture {
+  width: 300px;
+  height: 150px;
+  background-image: url('http://localhost:4200/assets/images/tritownBackground.gif');
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 15px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+ul li:first-child {
+  border-top: 1px solid #e9e9e9;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.main-container .wrapper {
+  padding: 10px;
+  margin-top: 10%;
+  width: 40%;
+  margin: auto;
+  border: 1px solid #e9e9e9;
+  border-radius: 2px;
+}

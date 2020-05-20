@@ -1,0 +1,42 @@
+<div class="d-flex flex-row justify-content-center bg-info">
+  <div class="p-2 bgMenu">
+    <img src="assets/images/menu65.png" (click)="toggleSidebar(); open = !open">
+      <ngx-flyout [(open)]="open" (flyoutClosed) = "menuClose()" [position]="position" [showCloseButton]="showCloseButton" [showBackdrop]="showBackdrop" [hideOnBackdropClick]="hideOnBackdropClick">
+        <div class="menu-container bg-info">
+          <ul>
+            <li><b>Admin</b></li>
+            <li><b>Directions</b></li>
+            <li [routerLink]="['/charities']"><b>Charities</b></li>
+            <li [routerLink]="['/events']"><b>Events</b></li>
+            <li [routerLink]="['/home']"><b>Home</b></li>
+            <li [routerLink]="['/links']"><b>Links</b></li>
+            <li [routerLink]="['/members']"><b>Members</b></li>
+            <li [routerLink]="['/pics']"><b>Pics</b></li>
+            <li [routerLink]="['/sponsors']"><b>Sponsors</b></li>
+            <li [routerLink]="['/upload']"><b>Upload Pics</b></li>
+          </ul>
+        </div>
+      </ngx-flyout>
+    </div>
+    <div class="p-1">
+      <font size='6'><b>Tri Town Cruzers</b></font>
+     </div>
+  </div>
+  <div class="bgContent">
+    <div class="bgPicsPage img-fluid mx-auto">
+        <slideshow #slideshow [height]=""
+          [minHeight]="'525px'"
+          [autoPlay]="false"
+          [showArrows]="true"
+          [showCaptions]="true"
+          [hideOnNoSlides]="true"
+          [captionColor]=""
+          [captionBackground]=""        
+          [imageUrls]="imageSources"
+          [lazyLoad]="imageSources?.length > 1"
+          [autoPlayWaitForLazyLoad]="true">
+        </slideshow>
+    </div>
+  </div>
+
+
